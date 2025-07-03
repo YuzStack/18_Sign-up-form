@@ -1,6 +1,150 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --bg-clr-tone: #596d48;
+}
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(./img/Norse-Bold.otf);
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Bg-container Section */
+.bg-container {
+  background: url(./assets/1_bg-photo.avif) no-repeat center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(2, 2, 2, 0.4);
+  position: absolute;
+  top: 25vh;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logo-container h2 {
+  font-size: 5.5rem;
+  font-family: "Norse-Bold";
+  margin-top: 1rem;
+}
+
+.credit {
+  position: absolute;
+  bottom: 2vh;
+  left: 25%;
+  color: #c3c0c0;
+  font-size: 14px;
+}
+
+.credit a {
+  color: #c3c0c0;
+}
+
+.text-container .paragraphs {
+  padding: min(3rem, 5vw);
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+  max-width: 80%;
+}
+
+.paragraphs p {
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  padding: min(3rem, 5vw);
+  background-color: #fff;
+  box-shadow: rgba(2, 2, 2, 0.2) 0 3px 5px;
+}
+
+.form-container h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #2a2a2a;
+}
+
+.form-container .flexed-inputs {
+  display: flex;
+  gap: 5vw;
+}
+
+.flexed-inputs .unit-flexed-input {
+  margin: 10px 0;
+}
+
+.unit-flexed-input label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #4a4a4ade;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.unit-flexed-input input {
+  width: 20vw;
+  height: 3vh;
+  border-radius: 8px;
+  border: #9d9d9d 2px solid;
+  padding: 14px;
+}
+
+.unit-flexed-input input:focus {
+    box-shadow: rgba(2, 2, 2, 0.2) 5px 5px 5px;
+}
+
+.unit-flexed-input input:valid {
+    border-color: var(--bg-clr-tone);
+}
+
+.unit-flexed-input input:invalid {
+  border-color: red;
+}
+
+.btn-section {
+  padding: min(3rem, 5vw);
+}
+
+.btn-section button {
+  color: white;
+  background-color: var(--bg-clr-tone);
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: rgba(2, 2, 2, 0.2) 5px 5px 5px;
+  cursor: pointer;
+}
+
+.btn-section p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btn-section p a {
+  text-decoration: none;
+  color: var(--bg-clr-tone);
 }
